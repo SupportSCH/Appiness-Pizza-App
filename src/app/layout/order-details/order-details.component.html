@@ -1,0 +1,135 @@
+<!---------------- Loader placeholder starts ------------------>
+<div class="col-md-12" *ngIf="loader">
+  <div class=" card mb-3">
+    <div class=" card-body row">
+      <div class="col-md-6">
+        <p class="animated-background"></p>
+        <p class="animated-background"></p>
+        <p class="animated-background"></p>
+        <p class="animated-background"></p>
+        <p class="animated-background mb-0"></p>
+      </div>
+      <div class="col-md-6">
+        <p class="animated-background"></p>
+        <p class="animated-background"></p>
+        <p class="animated-background"></p>
+        <p class="animated-background"></p>
+        <p class="animated-background mb-0"></p>
+      </div>
+    </div>
+  </div>
+</div>
+<!--------------- Loader place holder ends ------------------->
+
+<div class="container-fluid mb-3"  *ngIf="!loader">
+
+  <!------------------- Order Detail Card starts ------------------ -->
+  <div class="card">
+    <div class="card-header d-flex justify-content-between align-items-center">
+      <h4 class="card-title m-0">Order - {{OrderDetails.id}}</h4>
+
+      <!-- ******Change Status Button****** -->
+      <button type="button" (click)="statusChange(OrderDetails.statusCode + 1)" class="btn btn-sm status-btn"
+        [ngClass]="{'btn-outline-dark': OrderDetails.statusCode == 3, 'btn-outline-warning': OrderDetails.statusCode == 2, 'btn-outline-primary': OrderDetails.statusCode == 1, 'btn-outline-success': OrderDetails.statusCode == 0}">
+        <div class="new-label"><span>{{OrderDetails.status}}</span></div>
+      </button>
+
+    </div>
+    <div class="card-body pt-0">
+      <div class="row">
+        <!------------------- Left Side Pizza card starts ------------------ -->
+        <div class="col-md-6 align-items-center d-flex justify-content-center">
+          <div class="card pizza-card">
+            <span class="ribbon"
+              [ngClass]="{'ribbon_veg': OrderDetails.veg == 1, 'ribbon_nonveg': OrderDetails.veg == 2}">{{OrderDetails.veg
+              == 1 ? 'Veg' : 'Non Veg'}} <em
+                [ngClass]="{'ribbon-curve-veg': OrderDetails.veg == 1, 'ribbon-curve-nonveg': OrderDetails.veg == 2}"></em></span>
+            <div class="card-header p-0">
+              <div class="pizza-card--image">
+                <img *ngIf="OrderDetails.veg == 1" src="../../../assets/images/veg-pizza.jpg" alt="pizza" width="35">
+                <img *ngIf="OrderDetails.veg == 2" src="../../../assets/images/nonveg-pizza.jpeg" alt="pizza"
+                  width="35">
+              </div>
+            </div>
+            <div class="card-body">
+              <div class="pizza-card--desc">
+                <div class="d-flex justify-content-between">
+                  <h5 class="pizza-card--title">{{OrderDetails.orderName}}</h5>
+                </div>
+                <p>New Hand Tossed</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <h2 class="pizza-card--price">₹<span>{{OrderDetails.price / OrderDetails.quantity}}</span></h2>
+                  <h2 class="pizza-card--qty">Qty : <span>{{OrderDetails.quantity}}</span></h2>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!------------------- Left Side Pizza card ends ------------------ -->
+
+        <!------------------- Right Side Order Info starts ------------------ -->
+        <div class="col-md-6 align-items-center">
+          <ul class="order_info">
+            <li>
+              <div class="order_info--detail d-flex justify-content-start">
+                <div class="order_info--icon">
+                  <i class="fas fa-user"></i>
+                </div>
+                <div class="ml-5">
+                  <small class="text-uppercase">Customer Name</small>
+                  <h6>{{OrderDetails.customerName}}</h6>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="order_info--detail d-flex justify-content-start">
+                <div class="order_info--icon">
+                  <i class="fas fa-map-marker-alt"></i>
+                </div>
+                <div class="ml-5">
+                  <small class="text-uppercase">Delivery Location</small>
+                  <h6>{{OrderDetails.location}}</h6>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="order_info--detail d-flex justify-content-start">
+                <div class="order_info--icon">
+                  <i class="fas fa-rupee-sign"></i>
+                </div>
+                <div class="ml-5">
+                  <small class="text-uppercase">Order Total</small>
+                  <h6>₹ {{OrderDetails.price}}/-</h6>
+                </div>
+              </div>
+            </li>
+          </ul>
+
+
+          <!------------------- Order Status timeline starts ------------------ -->
+          <div class="text-center mt-5">
+            <ul id="orderStatus">
+              <li [ngClass]="{'active': OrderDetails.statusCode >= 0}" id="received" (click)="statusChange(0)">
+                <strong>Order Received</strong>
+              </li>
+              <li [ngClass]="{'active': OrderDetails.statusCode >= 1}" id="preparing" (click)="statusChange(1)">
+                <strong>Preparing</strong>
+              </li>
+              <li [ngClass]="{'active': OrderDetails.statusCode >= 2}" id="ready" (click)="statusChange(2)">
+                <strong>Ready to Deliver</strong>
+              </li>
+              <li [ngClass]="{'active': OrderDetails.statusCode >= 3}" id="deliver" (click)="statusChange(3)">
+                <strong>Out for Delivery</strong>
+              </li>
+            </ul>
+          </div>
+          <!------------------- Order Status timeline ends ------------------ -->
+          
+        </div>
+        <!------------------- Right Side Order Info ends ------------------ -->
+
+      </div>
+    </div>
+  </div>
+  <!------------------- Order Detail Card ends ------------------ -->
+</div>

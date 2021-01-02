@@ -1,0 +1,240 @@
+.card {
+  margin: auto;
+  box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 1rem;
+  border: transparent;
+}
+
+.status-btn{
+  width: 150px;
+}
+
+.status-btn:hover .new-label span {
+  display: none;
+}
+
+.status-btn:hover .new-label:after {
+  content: 'Change Status';
+}
+
+// ============ Right Side Order Info starts  ======================
+
+.ribbon {
+  position: absolute;
+  z-index: 1;
+  text-transform: uppercase;
+}
+
+.ribbon_veg,
+.ribbon_nonveg {
+  top: 15px;
+  left: -11px;
+  min-height: 20px;
+  min-width: 52px;
+  text-align: center;
+  padding: 3px 10px;
+  color: #fff;
+  font-size: 0.625rem;
+}
+
+.ribbon_veg {
+  background: #3AB54B;
+}
+
+.ribbon_nonveg {
+  background: #d62727;
+}
+
+.ribbon_veg::after,
+.ribbon_nonveg::after {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-left: 11px solid transparent;
+  left: 0;
+  content: "";
+  bottom: -10px;
+}
+
+.ribbon_veg::after {
+  border-top: 10px solid #239132;
+}
+
+.ribbon_nonveg::after {
+  border-top: 10px solid #912323;
+}
+
+.ribbon-curve-veg,
+.ribbon-curve-nonveg {
+  position: absolute;
+  top: 0;
+  right: -6px;
+  width: 10px;
+  height: 11px;
+  border-right: 5px solid transparent;
+}
+
+.ribbon-curve-veg {
+  border-top: 11px solid #3AB54B;
+  border-bottom: 10px solid #3AB54B;
+}
+
+.ribbon-curve-nonveg {
+  border-top: 11px solid #d62727;
+  border-bottom: 10px solid #d62727;
+}
+
+.pizza-card {
+  margin: 32px 0;
+}
+
+.pizza-card--image {
+  text-align: center;
+}
+
+.pizza-card--image img {
+  width: 100%;
+  border-top-left-radius: 0.25rem;
+  border-top-right-radius: 0.25rem;
+}
+
+.pizza-card--desc p {
+  margin-bottom: 0.625rem;
+}
+
+.pizza-card--price,
+.pizza-card--qty {
+  font-size: 1.25rem;
+  margin: 0;
+  font-weight: 700;
+}
+
+.pizza-card--title {
+  font-weight: 700;
+}
+// ============ left Side Order Info ends  ======================
+
+
+// ============ Right Side Order Info starts  ======================
+.order_info li {
+  list-style-type: none;
+  margin-top: 48px;
+}
+
+.order_info h6 {
+  font-weight: bold;
+}
+
+.order_info--icon i {
+  font-size: 20px;
+  color: #040b14;
+  float: left;
+  width: 44px;
+  height: 44px;
+  background: #d8d8d8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  transition: all 0.3s ease-in-out;
+}
+
+.order_info--detail:hover {
+  .order_info--icon i {
+    background: #6c757d;
+    color: #fff;
+  }
+}
+
+// ============ Order Status timeline starts ===============
+#orderStatus {
+  margin-bottom: 30px;
+  overflow: hidden;
+  color: lightgrey;
+  padding-left: 0px;
+}
+
+#orderStatus .active {
+  color: #f7b21f
+}
+
+#orderStatus li {
+  list-style-type: none;
+  font-size: 15px;
+  width: 25%;
+  float: left;
+  position: relative;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+#orderStatus #received:before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f063";
+  color: #820300;
+}
+
+#orderStatus #preparing:before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f563";
+  color: #820300;
+}
+
+#orderStatus #ready:before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f818";
+  color: #820300;
+}
+
+#orderStatus #deliver:before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f21c";
+  color: #820300;
+}
+
+#orderStatus li:before {
+  width: 50px;
+  height: 50px;
+  line-height: 45px;
+  display: block;
+  font-size: 20px;
+  color: #ffffff;
+  background: lightgray;
+  border-radius: 50%;
+  margin: 0 auto 10px auto;
+  padding: 2px;
+  position: relative;
+  z-index: 1
+}
+
+#orderStatus li:after {
+  content: '';
+  width: 100%;
+  height: 2px;
+  background: lightgray;
+  position: absolute;
+  left: 0;
+  top: 25px;
+}
+
+#orderStatus li.active:before,
+#orderStatus li.active:after {
+  background: #f7b21f
+}
+
+#orderStatus li:hover:before,
+#orderStatus li:hover:after {
+  background: #6c757d;
+}
+
+#orderStatus li.active:hover:before,
+#orderStatus li.active:hover:after {
+  background: #f7b21f
+}
+// ============ Order Status timeline ends ===============
+
+// ============ Right Side Order Info ends  ======================

@@ -1,0 +1,39 @@
+
+.dashboard {
+  padding: 3rem;
+}
+
+.cards {
+  margin-bottom: 3rem;
+}
+
+.card {
+  margin: auto;
+  max-width: 950px;
+  width: 90%;
+  box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 1rem;
+  border: transparent
+}
+
+.card:hover {
+  cursor: pointer;
+  transform: scale(1.005);
+}
+
+@media(max-width:767px) {
+
+  .cards {
+    margin-bottom: 0px;
+  }
+
+  .dashboard {
+    padding: 0px;
+    margin-top: 0px;
+  }
+
+  .card {
+      margin: 3vh auto
+  }
+  
+}

@@ -1,0 +1,96 @@
+<div class="container-fluid">
+  <div class="row justify-content-between">
+    <div class="col-md-12 d-flex justify-content-start">
+      <h2 class="page-heading">{{OrderList.length}}</h2>
+      <h2 class="page-heading ml-3">Orders</h2>
+    </div>
+  </div>
+
+  <div class="dashboard row">
+
+    <!--------------- Order Received Starts ------------ -->
+    <div class="col-sm-6 col-xxl-6 col-xl-6 cards">
+      <div class="card" [routerLink]="['/orders']">
+        <div class="card-body pb-0">
+          <div class="row justify-content-between">
+            <div class="col-auto">
+              <h4 class="text-muted mb-3">Orders Received</h4>
+            </div>
+            <div class="col-auto">
+              <h1>{{order_received}}</h1>
+            </div>
+          </div>
+          <div>
+            <span class="text-success"><i class="fas fa-arrow-up"></i> 6.36% </span>
+            <p> Since Morning</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--------------- Order Received ends ------------ -->
+
+    <!--------------- Preparing Starts ------------ -->
+    <div class="col-sm-6 col-xxl-6 col-xl-6 cards">
+      <div class="card" [routerLink]="['/orders']">
+        <div class="card-body pb-0">
+          <div class="row justify-content-between">
+            <div class="col-auto">
+              <h4 class="text-muted mb-3">Preparing</h4>
+            </div>
+            <div class="col-auto">
+              <h1>{{preparing}}</h1>
+            </div>
+          </div>
+          <div>
+            <span class="text-success"><i class="fas fa-arrow-up"></i> 16.6% </span>
+            <p> Faster than yesterday</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--------------- Preparing ends -------------->
+
+    <!--------------- Ready to deliver starts -------------->
+    <div class="col-sm-6 col-xxl-6 col-xl-6 cards">
+      <div class="card" [routerLink]="['/orders']">
+        <div class="card-body pb-0">
+          <div class="row justify-content-between">
+            <div class="col-auto">
+              <h4 class="text-muted mb-3">Ready To Deliver</h4>
+            </div>
+            <div class="col-auto">
+              <h1>{{ready_to_deliver}}</h1>
+            </div>
+          </div>
+          <div>
+            <span class="text-success"><i class="fas fa-arrow-up"></i> 49.8% </span>
+            <p> More Deliveries since yesterday</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--------------- Ready to deliver ends -------------->
+
+    <!--------------- Out For Delivery starts -------------->
+    <div class="col-sm-6 col-xxl-6 col-xl-6 cards">
+      <div class="card" [routerLink]="['/orders']">
+        <div class="card-body pb-0">
+          <div class="row justify-content-between">
+            <div class="col-auto">
+              <h4 class="text-muted mb-3">Out for Delivery</h4>
+            </div>
+            <div class="col-auto">
+              <h1>{{out_for_delivery}}</h1>
+            </div>
+          </div>
+          <div>
+            <span class="text-success"><i class="fas fa-arrow-up"></i> 33.2% </span>
+            <p> Happy Customers</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--------------- Out For Delivery ends  -------------->
+
+  </div>
+</div>

@@ -1,0 +1,61 @@
+<!--------------- Loader placeholder starts --------------------->
+<div class="col-md-12" *ngIf="loader">
+  <div class=" card mb-3">
+    <div class=" card-body row">
+      <div class="col-md-12">
+        <p class="animated-background"></p>
+        <p class="animated-background"></p>
+        <p class="animated-background mb-0"></p>
+      </div>
+    </div>
+  </div>
+</div>
+<!----------------- Loader place holder ends ------------------->
+
+<div class="container-fluid mb-5" *ngIf="!loader">
+  <div class="row justify-content-between mb-3">
+    <div class="col-md-12 d-flex justify-content-start">
+      <h2 class="page-heading">{{OrderList.length}}</h2>
+      <h2 class="page-heading ml-3">Orders</h2>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <!---------------- Order List starts --------------- -->
+      <div class="card">
+        <div class="card-body">
+          <div class="table-responsive">
+            <table id="example" class="table table-hover">
+              <thead>
+                <tr>
+                  <th scope="col">Order ID</th>
+                  <th scope="col" class="mobile">Order Name</th>
+                  <th scope="col" class="mobile">Custommer Name</th>
+                  <th scope="col" class="mobile">Location</th>
+                  <th scope="col" class="mobile">Quantity</th>
+                  <th scope="col">Price</th>
+                  <th scope="col">Status</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr *ngFor="let order of OrderList" [routerLink]="['/orders',order.id]">
+                  <td>{{order.id}}</td>
+                  <td class="mobile">{{order.orderName}}</td>
+                  <td class="mobile">{{order.customerName}}</td>
+                  <td class="mobile">{{order.location}}</td>
+                  <td class="mobile">{{order.quantity}}</td>
+                  <td>₹ {{order.price}}</td>
+                  <td>
+                    <span class="badge"
+                      [ngClass]="{'badge-dark': order.statusCode == 3, 'badge-warning': order.statusCode == 2, 'badge-primary': order.statusCode == 1, 'badge-success': order.statusCode == 0}">{{order.status}}</span>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+      <!---------------- Order List ends --------------- -->
+    </div>
+  </div>
+</div>

@@ -1,0 +1,224 @@
+{
+  "orders": [
+    {
+      "id": "54575",
+      "orderName": "Marghareta-Large",
+      "veg": 1,
+      "customerName": "Meghana Dube",
+      "location": "Koramangala",
+      "quantity": "4",
+      "price": "1600",
+      "status": "Order Received",
+      "statusCode": 0
+    },
+    {
+      "id": "54574",
+      "orderName": "Pasta Pizza-Large",
+      "veg": 1,
+      "customerName": "Sachin BS",
+      "location": "BTM Layout",
+      "quantity": "2",
+      "price": "980",
+      "status": "Order Received",
+      "statusCode": 0
+    },
+    {
+      "id": "54573",
+      "orderName": "Chicken Pery Pery-Regular",
+      "veg": 2,
+      "customerName": "Bharath Shetty",
+      "location": "Jayanagar 4th Block",
+      "quantity": "3",
+      "price": "1200",
+      "status": "Order Received",
+      "statusCode": 0
+    },
+    {
+      "id": "54572",
+      "orderName": "Pasta Pizza-Large",
+      "veg": 2,
+      "customerName": "Gautham",
+      "location": "JP Nagar",
+      "quantity": "1",
+      "price": "499",
+      "status": "Order Received",
+      "statusCode": 0
+    },
+    {
+      "id": "54571",
+      "orderName": "Chicken Pery Pery-Regular",
+      "veg": 2,
+      "customerName": "Shubham",
+      "location": "Southend Circle",
+      "quantity": "2",
+      "price": "439",
+      "status": "Order Received",
+      "statusCode": 0
+    },
+    {
+      "id": "54570",
+      "orderName": "Pasta Pizza-Large",
+      "veg": 1,
+      "customerName": "Vamshi Krishna",
+      "location": "Konankunte",
+      "quantity": "1",
+      "price": "499",
+      "status": "Order Received",
+      "statusCode": 0
+    },
+    {
+      "id": "54569",
+      "orderName": "Marghareta-Medium",
+      "veg": 2,
+      "customerName": "Gautham",
+      "location": "JP Nagar",
+      "quantity": "1",
+      "price": "499",
+      "status": "Order Received",
+      "statusCode": 0
+    },
+    {
+      "id": "54568",
+      "orderName": "Pasta Pizza-Large",
+      "veg": 2,
+      "customerName": "Gautham",
+      "location": "JP Nagar",
+      "quantity": "1",
+      "price": "499",
+      "status": "Preparing",
+      "statusCode": 1
+    },
+    {
+      "id": "54567",
+      "orderName": "Chicken Pery Pery-Regular",
+      "veg": 2,
+      "customerName": "Parinitha",
+      "location": "Girinagar",
+      "quantity": "2",
+      "price": "450",
+      "status": "Preparing",
+      "statusCode": 1
+    },
+    {
+      "id": "54566",
+      "orderName": "Veg Extraveganza-Medium",
+      "veg": 1,
+      "customerName": "Bala Kumar",
+      "location": "Basavanagudi",
+      "quantity": "1",
+      "price": "199",
+      "status": "Preparing",
+      "statusCode": 1
+    },
+    {
+      "id": "54565",
+      "orderName": "Veg Extraveganza-Medium",
+      "veg": 1,
+      "customerName": "Rahul Nagaraj",
+      "location": "Malleshwaram",
+      "quantity": "2",
+      "price": "499",
+      "status": "Preparing",
+      "statusCode": 1
+    },
+    {
+      "id": "54564",
+      "orderName": "Veg Maharaja-Regular",
+      "veg": 1,
+      "customerName": "Mahanth Chavan",
+      "location": "Basavanagudi",
+      "quantity": "3",
+      "price": "549",
+      "status": "Preparing",
+      "statusCode": 1
+    },
+    {
+      "id": "54563",
+      "orderName": "Chicken Pery Pery-Medium",
+      "veg": 2,
+      "customerName": "Prashanth Kumar",
+      "location": "Jayanagar",
+      "quantity": "1",
+      "price": "370",
+      "status": "Ready to Deliver",
+      "statusCode": 2
+    },
+    {
+      "id": "54562",
+      "orderName": "Pasta Pizza-Regular",
+      "veg": 2,
+      "customerName": "Ganesh Sampreeth",
+      "location": "Banashankari",
+      "quantity": "1",
+      "price": "399",
+      "status": "Ready to Deliver",
+      "statusCode": 2
+    },
+    {
+      "id": "54561",
+      "orderName": "Double cheese burst-Medium",
+      "veg": 1,
+      "customerName": "Ashrith Krishna",
+      "location": "Malleshwaram",
+      "quantity": "2",
+      "price": "650",
+      "status": "Ready to Deliver",
+      "statusCode": 2
+    },
+    {
+      "id": "54560",
+      "orderName": "Double cheese burst-Regular",
+      "veg": 1,
+      "customerName": "Sharath Kumar",
+      "location": "Hebbal",
+      "quantity": "2",
+      "price": "650",
+      "status": "Ready to Deliver",
+      "statusCode": 2
+    },
+    {
+      "id": "54559",
+      "orderName": "Marghareta Pizza-Medium",
+      "veg": 1,
+      "customerName": "Vignesh",
+      "location": "BTM Layout",
+      "quantity": "2",
+      "price": "740",
+      "status": "Out for Delivery",
+      "statusCode": 3
+    },
+    {
+      "id": "54558",
+      "orderName": "American Special Pizza-Large",
+      "veg": 2,
+      "customerName": "Srishti",
+      "location": "Electronic City",
+      "quantity": "1",
+      "price": "439",
+      "status": "Out for Delivery",
+      "statusCode": 3
+    },
+    {
+      "id": "54557",
+      "orderName": "Veggi Onion Corn and Jalapeno-Regular",
+      "veg": 1,
+      "customerName": "Shubhada Bhat",
+      "location": "Electronic City",
+      "quantity": "1",
+      "price": "299",
+      "status": "Out for Delivery",
+      "statusCode": 3
+    },
+    {
+      "id": "54556",
+      "orderName": "Double cheese burst-Medium",
+      "veg": 1,
+      "customerName": "Akshay Hegde",
+      "location": "Yashawanthpur",
+      "quantity": "1",
+      "price": "299",
+      "status": "Out for Delivery",
+      "statusCode": 3
+    }
+  ]
+}
